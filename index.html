@@ -58,9 +58,22 @@
 
                 <!-- Chat list -->
                 <div class="chat-list">
-                    <div role="button" class="chat-box d-flex align-items-center">
-                        <div v-for="(contact, index) in contacts" :key="index" class="img-container">
+                    <div v-for="(contact, index) in contacts" :key="index" role="button" class="chat-box d-flex align-items-center">
+                        <div class="img-container">
                             <img class="img-user-chat" :src="contact.avatar" alt="">
+                        </div>
+                        <div class="chat-details d-flex ">
+                            <div class="justify-content-space-between align-items-center mb-1 mx-2">
+                                <div class="fw-bold">
+                                    {{ contact.name }}
+                                </div>
+                                <div class="user-message">
+                                    Ultimo messaggio inviato
+                                </div>
+                            </div>
+                            <div class="text-message">
+                                <p>12:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>

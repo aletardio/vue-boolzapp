@@ -167,5 +167,8 @@ createApp ({
                 }
               ]
         }
-    }
+    },
+    methods: {
+        
+    },
 }).mount('#app');
