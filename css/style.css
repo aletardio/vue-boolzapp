@@ -38,6 +38,9 @@ body {
     width: 100%;
     height: 65px;
     background: #EDEDED;
+}
+
+.padd-img {
     padding: 0 15px;
 }
 
@@ -60,6 +63,7 @@ body {
 
 .padd-icons {
     padding-top: 20px;
+    padding-right: 15px;
 }
 
 .notifications-box {
@@ -150,4 +154,13 @@ body {
     padding-left: 40px;
     font-size: 13px;
     color: grey;
+}
+
+.chat-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 150px);
+    padding: 50px;
+    overflow-y: auto;
+    background-color: red;
 }
