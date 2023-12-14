@@ -194,3 +194,14 @@ body {
     font-size: 0.8em;
     opacity: 0.5;
 }
+
+.chat-input {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    background: #f0f0f0;
+}
+
+i.fa-solid.fa-microphone.fa-lg, .fa-regular.fa-face-smile.fa-lg {
+    padding: 0 20px;
+}
