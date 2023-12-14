@@ -176,7 +176,21 @@ body {
     text-align: right;
     max-width: 65%;
     padding: 12px;
-    background: #dcf8c6;
     border-radius: 10px;
     font-size: 0.9em;
+}
+
+.my-mess {
+    background: #dcf8c6;
+}
+
+.friend-mess {
+    background: #fff;
+}
+
+.time-sms {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    opacity: 0.5;
 }
