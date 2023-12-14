@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
-#bg-green {
-    height: 100vh;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, #029688 14vh, #CCCCCC 10vh);
+}
+
+.boolzapp-container {
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+    height: calc(100vh - 150px);
+    background-color: #fff;
 }
