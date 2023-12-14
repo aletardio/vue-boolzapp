@@ -58,7 +58,7 @@
 
                 <!-- Chat list -->
                 <div class="chat-list">
-                    <div v-for="(contact, index) in contacts" :key="index" role="button" class="chat-box d-flex align-items-center">
+                    <div v-for="(contact, index) in contacts" :key="index" role="button" class="chat-box d-flex align-items-center" @click="userClick(contact)">
                         <div class="img-container">
                             <img class="img-user-chat" :src="contact.avatar" alt="">
                         </div>
@@ -88,10 +88,10 @@
                     <!-- User -->
                     <div class="col-6 d-flex justify-content-start align-items-center padd-img">
                         <div class="user-img d-flex">
-                            <img role="button" src="./img/avatar_2.png" class="user" alt=""/>
+                            <img role="button" :src="avatar" class="user" alt=""/>
                         </div>
                         <span class="text-black px-2">
-                            Alessandro
+                            {{name}}
                         </span>
                     </div>
 
@@ -107,22 +107,28 @@
                     
                 </div>
 
-                <!-- Chat -->
-                <div class="chat-container">
-                    <div class="message-box d-flex justify-content-end">
-                        <p class="my-mess">
-                            Ciao come stai?
-                            <br>
-                            <span class="time-sms">12:00</span>
-                        </p>
+                <div v-if="user_messages.length > 0">
+                    <!-- Chat -->
+                    <div v-for="(m, index) in user_messages" key="index" class="chat-container">
+                        <div v-if="m.status == 'sent'"  class="message-box d-flex justify-content-end">
+                            <p class="my-mess">
+                                {{m.message}}
+                                <br>
+                                <span class="time-sms">{{m.date}}</span>
+                            </p>
+                        </div>
+                        <div v-else class="message-box d-flex justify-content-start">
+                            <p class="friend-mess">
+                                {{m.message}}
+    
+                                <br>
+                                <span class="time-sms">{{m.date}}</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="message-box d-flex justify-content-start">
-                        <p class="friend-mess">
-                            Ciao tutto bene tu?
-                            <br>
-                            <span class="time-sms">12:00</span>
-                        </p>
-                    </div>
+                </div>
+                <div class="empty-chat" v-else>
+                    
                 </div>
 
                 <!-- Chat Box -->

@@ -164,6 +164,10 @@ body {
     overflow-y: auto;
 }
 
+.empty-chat {
+    height: 334px;
+}
+
 .message-box {
     position: relative;
     width: 100%;
