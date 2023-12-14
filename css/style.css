@@ -18,4 +18,17 @@ body {
     max-width: 100%;
     height: calc(100vh - 150px);
     background-color: #fff;
+    display: flex;
+}
+
+.boolzapp-container .left-side {
+    position: relative;
+    flex: 30%;
+    background-color: red;
+}
+
+.boolzapp-container .right-side {
+    position: relative;
+    flex: 70%;
+    background-color: green;
 }
