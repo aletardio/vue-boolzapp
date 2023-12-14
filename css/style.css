@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#bg-green {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #029688 14vh, #CCCCCC 10vh);
+}
