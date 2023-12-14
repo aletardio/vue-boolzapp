@@ -21,7 +21,7 @@
                     <!-- User -->
                     <div class="col-6 d-flex justify-content-start align-items-center">
                         <div class="user-img">
-                            <img role="button" src="./img/avatar_2.jpg" class="user" alt=""/>
+                            <img role="button" src="./img/avatar_2.png" class="user" alt=""/>
                         </div>
                         <span class="text-black px-2">
                             Alessandro
@@ -53,6 +53,15 @@
                     <div class="input">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+                </div>
+
+                <!-- Chat list -->
+                <div class="chat-list">
+                    <div role="button" class="chat-box d-flex align-items-center">
+                        <div v-for="(contact, index) in contacts" :key="index" class="img-container">
+                            <img class="img-user-chat" :src="contact.avatar" alt="">
+                        </div>
                     </div>
                 </div>
 

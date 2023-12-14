@@ -114,3 +114,29 @@ body {
     padding-left: 60px;
     margin: 10px;
 }
+
+.chat-list {
+    position: relative;
+    height: calc(100% - 170px);
+    overflow-y: auto;
+}
+
+.chat-box {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.img-container {
+    position: relative;
+    width: 55px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-user-chat {
+    width: 100%;
+    object-fit: cover; 
+}
