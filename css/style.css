@@ -86,3 +86,31 @@ body {
 .notifications-text {
     margin: 25px;
 }
+
+.search-container {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #f6f6f6;
+}
+
+.search-container .input i {
+    position: absolute;
+    left: 26px;
+    top: 14px;
+    color: #bbb;
+    font-size: 0.8em;
+}
+
+.search-container .input input {
+    width: 340px;
+    outline: none;
+    border: none;
+    background: #fff;
+    padding: 5px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    padding-left: 60px;
+    margin: 10px;
+}
