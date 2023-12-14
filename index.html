@@ -114,7 +114,7 @@
                             <p class="my-mess">
                                 {{m.message}}
                                 <br>
-                                <span class="time-sms">{{m.date}}</span>
+                                <span class="time-sms">{{m.date.split(' ')[1]}}</span>
                             </p>
                         </div>
                         <div v-else class="message-box d-flex justify-content-start">
@@ -122,7 +122,7 @@
                                 {{m.message}}
     
                                 <br>
-                                <span class="time-sms">{{m.date}}</span>
+                                <span class="time-sms">{{m.date.split(' ')[1]}}</span>
                             </p>
                         </div>
                     </div>
