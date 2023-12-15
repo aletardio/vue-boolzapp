@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp ({
     data() {
         return{
+            searchUser:'',
             newTextMessage:'',
             name:'Michele',
             avatar: './img/avatar_1.png',
@@ -186,6 +187,12 @@ createApp ({
               ]
         }
     },
+    computed:{
+        filteredContacts() {
+            const searchTerm = this.searchUser.toLowerCase();
+            return this.contacts.filter(contact => contact.name.toLowerCase().includes(searchTerm));
+        }
+    },
     methods: {
         userClick(contact){
             var chat = contact;
@@ -217,6 +224,14 @@ createApp ({
               this.user_messages.push(replyMessage);
             }, 1000);
             this.newTextMessage = '';
-          }
+        },
+        searchUser() {
+            const searchTerm = this.searchUser.toLowerCase();
+          
+            this.contacts.forEach((contact) => {
+              const contactName = contact.name.toLowerCase();
+              contact.visible = contactName.includes(searchTerm);
+            });
+        },
     },
 }).mount('#app');

@@ -52,13 +52,13 @@
                 <div class="search-container d-flex align-items-center">
                     <div class="input">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="searchUser" @input="searchUser" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
 
                 <!-- Chat list -->
                 <div class="chat-list">
-                    <div v-for="(contact, index) in contacts" :key="index" role="button" class="chat-box d-flex align-items-center" @click="userClick(contact)">
+                    <div v-for="contact in filteredContacts" :key="contact.name" v-show="contact.visible" role="button" class="chat-box d-flex align-items-center" @click="userClick(contact)">
                         <div class="img-container">
                             <img class="img-user-chat" :src="contact.avatar" alt="">
                         </div>
