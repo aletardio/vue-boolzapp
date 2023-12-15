@@ -146,7 +146,7 @@ body {
 
 .img-container {
     position: relative;
-    width: 55px;
+    width: 67px;
     height: 55px;
     overflow: hidden;
     border-radius: 50%;
@@ -213,7 +213,7 @@ body {
 }
 
 .chat-details {
-    width: 80%;
+    width: 100%;
 }
 
 .chat-input {
@@ -235,3 +235,23 @@ i.fa-solid.fa-microphone.fa-lg, .fa-regular.fa-face-smile.fa-lg {
 ul i:hover {
     color: #029688;
 }
+
+p.friend-mess i {
+    display: none;
+}
+
+p.friend-mess:hover i {
+    display: inline;
+    cursor: pointer;
+}
+
+p.my-mess i {
+    display: none;
+}
+
+p.my-mess:hover i {
+    display: inline;
+    cursor: pointer;
+}
+
+

@@ -113,6 +113,7 @@
                         <div v-if="m.status == 'sent'"  class="message-box d-flex justify-content-end">
                             <p class="my-mess">
                                 {{m.message}}
+                                <i class="fa-solid fa-chevron-down"></i>
                                 <br>
                                 <span class="time-sms">{{m.date.split(' ')[1]}}</span>
                             </p>
@@ -120,7 +121,7 @@
                         <div v-else class="message-box d-flex justify-content-start">
                             <p class="friend-mess">
                                 {{m.message}}
-    
+                                <i class="fa-solid fa-chevron-down"></i>
                                 <br>
                                 <span class="time-sms">{{m.date.split(' ')[1]}}</span>
                             </p>
