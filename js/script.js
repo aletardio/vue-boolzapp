@@ -233,5 +233,18 @@ createApp ({
               contact.visible = contactName.includes(searchTerm);
             });
         },
+        getLastMessageAndTime(contact) {
+            const lastMessage = contact.messages.length > 0 ? contact.messages[contact.messages.length - 1] : null;
+      
+            return {
+              contactName: contact.name,
+              lastMessage: lastMessage ? lastMessage.message : 'Nessun messaggio',
+              lastMessageTime: lastMessage ? lastMessage.date : 'N/A'
+            };
+          },
+          stopText(text, maxLength) {
+            return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+          }
+
     },
 }).mount('#app');

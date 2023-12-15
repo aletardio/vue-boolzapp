@@ -65,14 +65,14 @@
                         <div class="chat-details d-flex ">
                             <div class="justify-content-space-between align-items-center mb-1 mx-2">
                                 <div class="fw-bold">
-                                    {{ contact.name }}
+                                    {{ getLastMessageAndTime(contact).contactName }}
                                 </div>
                                 <div class="user-message">
-                                    Ultimo messaggio inviato
+                                    {{ stopText(getLastMessageAndTime(contact).lastMessage, 12) }}
                                 </div>
                             </div>
                             <div class="text-message">
-                                <p>12:00</p>
+                                <p>{{ getLastMessageAndTime(contact).lastMessageTime.split(' ')[1] }}</p>
                             </div>
                         </div>
                     </div>

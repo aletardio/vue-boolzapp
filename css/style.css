@@ -141,7 +141,7 @@ body {
 }
 
 .chat-box:hover {
-    background-color: rgb(222, 221, 221);
+    background-color: #02968750;
 }
 
 .img-container {
@@ -219,6 +219,14 @@ body {
     bottom: 0;
 }
 
+.chat-input i:hover {
+    color: #029688;
+}
+
 i.fa-solid.fa-microphone.fa-lg, .fa-regular.fa-face-smile.fa-lg {
     padding: 0 25px;
+}
+
+ul i:hover {
+    color: #029688;
 }
