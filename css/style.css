@@ -91,6 +91,14 @@ body {
     margin: 25px;
 }
 
+.notifications-text a {
+    color: grey
+}
+
+.notifications-text a:hover {
+    color: #0080b2;
+}
+
 .search-container {
     position: relative;
     width: 100%;
@@ -130,6 +138,10 @@ body {
     width: 100%;
     padding: 15px;
     border-bottom: 1px solid #eee;
+}
+
+.chat-box:hover {
+    background-color: rgb(222, 221, 221);
 }
 
 .img-container {

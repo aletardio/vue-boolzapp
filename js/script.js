@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp ({
     data() {
         return{
+            newTextMessage:'',
             name:'Michele',
             avatar: './img/avatar_1.png',
             user_messages: [{
@@ -196,7 +197,27 @@ createApp ({
             // console.log(this.user_messages.length);
             
             console.log(this.user_messages);
+        },
+        addNewMessage() {
 
-        }
+            if(this.newTextMessage){
+                this.user_messages.push({
+                    date: new Date().toLocaleString(),
+                    message: this.newTextMessage,
+                    status: 'sent'
+                });
+                this.newItemName = '';
+            }
+
+            setTimeout(() => {
+              const replyMessage = {
+                date: new Date().toLocaleString(),
+                message: 'Ok',
+                status: 'received'
+              };
+              this.user_messages.push(replyMessage);
+            }, 1000);
+            this.newTextMessage = '';
+          }
     },
 }).mount('#app');
