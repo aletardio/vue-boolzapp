@@ -199,7 +199,6 @@ createApp ({
             console.log(this.user_messages);
         },
         addNewMessage() {
-
             if(this.newTextMessage){
                 this.user_messages.push({
                     date: new Date().toLocaleString(),
