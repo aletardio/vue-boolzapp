@@ -186,6 +186,7 @@ body {
 }
 
 .message-box p {
+    word-break: break-all;
     position: relative;
     right: 0;
     text-align: right;
@@ -209,6 +210,10 @@ body {
     margin-top: 5px;
     font-size: 0.8em;
     opacity: 0.5;
+}
+
+.chat-details {
+    width: 80%;
 }
 
 .chat-input {

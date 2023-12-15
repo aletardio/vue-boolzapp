@@ -62,13 +62,13 @@
                         <div class="img-container">
                             <img class="img-user-chat" :src="contact.avatar" alt="">
                         </div>
-                        <div class="chat-details d-flex ">
-                            <div class="justify-content-space-between align-items-center mb-1 mx-2">
+                        <div class="chat-details d-flex justify-content-between">
+                            <div class="align-items-center mb-1 mx-2">
                                 <div class="fw-bold">
                                     {{ getLastMessageAndTime(contact).contactName }}
                                 </div>
                                 <div class="user-message">
-                                    {{ stopText(getLastMessageAndTime(contact).lastMessage, 12) }}
+                                    {{ stopText(getLastMessageAndTime(contact).lastMessage, 20) }}
                                 </div>
                             </div>
                             <div class="text-message">
