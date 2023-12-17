@@ -28,6 +28,7 @@ body {
 }
 
 .boolzapp-container .right-side {
+    overflow: auto;
     position: relative;
     flex: 70%;
     background-image: url(../img/mine.jpg);
