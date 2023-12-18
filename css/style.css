@@ -128,6 +128,11 @@ body {
     margin: 10px;
 }
 
+.cont-chat {
+    height: 664px;
+    overflow-y: auto;
+}
+
 .chat-list {
     position: relative;
     height: calc(100% - 165px);
@@ -172,7 +177,7 @@ body {
 .chat-container {
     position:relative;
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 535px);
     overflow-y: auto;
 }
 
@@ -207,7 +212,6 @@ body {
 }
 
 .time-sms {
-    display: block;
     margin-top: 5px;
     font-size: 0.8em;
     opacity: 0.5;
@@ -254,5 +258,4 @@ p.my-mess:hover i {
     display: inline;
     cursor: pointer;
 }
-
 

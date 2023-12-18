@@ -107,9 +107,9 @@
                     
                 </div>
 
-                <div v-if="user_messages.length > 0">
+                <div class="cont-chat" v-if="user_messages.length > 0">
                     <!-- Chat -->
-                    <div v-for="(m, index) in user_messages" key="index" class="chat-container">
+                    <div v-for="(m, index) in user_messages" key="index"        class="chat-container">
                         <div v-if="m.status == 'sent'"  class="message-box d-flex justify-content-end">
                             <p class="my-mess">
                                 {{m.message}}
