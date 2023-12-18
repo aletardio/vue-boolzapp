@@ -236,7 +236,7 @@ createApp ({
       
             return {
               contactName: contact.name,
-              lastMessage: lastMessage ? lastMessage.message : 'Nessun messaggio',
+              lastMessage: lastMessage ? lastMessage.message : '',
               lastMessageTime: lastMessage ? lastMessage.date : 'N/A'
             };
           },
