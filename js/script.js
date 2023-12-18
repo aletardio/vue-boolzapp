@@ -196,12 +196,10 @@ createApp ({
     methods: {
         userClick(contact){
             var chat = contact;
-            // console.log(chat);
 
             this.user_messages = chat.messages;
             this.name = chat.name;
             this.avatar = chat.avatar;
-            // console.log(this.user_messages.length);
             
             console.log(this.user_messages);
         },
@@ -246,7 +244,6 @@ createApp ({
             return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
           },
           deleteMessage(index) {
-            // Rimuovi il messaggio dall'array
             this.user_messages.splice(index, 1);
           },
     },
