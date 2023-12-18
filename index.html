@@ -111,25 +111,22 @@
                     <!-- Chat -->
                     <div v-for="(m, index) in user_messages" key="index"        class="chat-container">
                         <div v-if="m.status == 'sent'"  class="message-box d-flex justify-content-end">
-
-                            <!-- <p class=" dropdown my-mess">
+                            <p class="my-mess" data-bs-toggle="dropdown">
                                 {{m.message}}
                                 <i class="fa-solid fa-chevron-down"></i>
                                 <br>
                                 <span class="time-sms">{{m.date.split(' ')[1]}}</span>
-                            </p> -->
-
-                                <p class="my-mess" data-bs-toggle="dropdown">
-                                    {{m.message}}
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                    <br>
-                                    <span class="time-sms">{{m.date.split(' ')[1]}}</span>
-                                </p>
-                                <ul class="dropdown-menu drpdwn">
-                                    <li><button class="dropdown-item" type="button">Info messaggio</button></li>
-                                    <li><button class="dropdown-item" type="button">Elimina messaggio</button></li>
-                                </ul>
+                            </p>
+                            <ul class="dropdown-menu drpdwn">
+                                <li><button class="dropdown-item" type="button">
+                                    Info messaggio
+                                </button></li>
+                                <li><button class="dropdown-item" type="button" @click="deleteMessage(index)">
+                                    Elimina messaggio
+                                </button></li>
+                            </ul>
                         </div>
+
                         <div v-else class="message-box d-flex justify-content-start">
                             <p class="friend-mess" data-bs-toggle="dropdown">
                                 {{m.message}}
@@ -138,8 +135,12 @@
                                 <span class="time-sms">{{m.date.split(' ')[1]}}</span>
                             </p>
                             <ul class="dropdown-menu">
-                                <li><button class="dropdown-item" type="button">Info messaggio</button></li>
-                                <li><button class="dropdown-item" type="button">Elimina messaggio</button></li>
+                                <li><button class="dropdown-item" type="button">
+                                    Info messaggio
+                                </button></li>
+                                <li><button class="dropdown-item" type="button" @click="deleteMessage(index)">
+                                    Elimina messaggio
+                                </button></li>
                             </ul>
                         </div>
                     </div>

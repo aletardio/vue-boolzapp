@@ -244,7 +244,10 @@ createApp ({
           },
           stopText(text, maxLength) {
             return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
-          }
-
+          },
+          deleteMessage(index) {
+            // Rimuovi il messaggio dall'array
+            this.user_messages.splice(index, 1);
+          },
     },
 }).mount('#app');
