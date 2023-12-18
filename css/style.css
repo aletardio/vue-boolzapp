@@ -177,8 +177,6 @@ body {
 .chat-container {
     position:relative;
     width: 100%;
-    height: calc(100% - 535px);
-    overflow-y: auto;
 }
 
 .empty-chat {
@@ -271,21 +269,11 @@ p.my-mess:hover i {
     cursor: pointer;
 }
 
-.dropdown {
-    width: 100%;
-}
-
-p.btn.btn-secondary {
-    background-color: #dcf8c6;
-    border: none;
-    color: #000;
-}
-
-ul.dropdown-menu.show {
+ul.dropdown-menu.drpdwn.show {
     position: absolute;
     inset: 0px auto auto 0px;
     margin: 0px;
-    transform: translate3d(339px, 82px, 0px);
+    transform: translate3d(647.5px, 74px, 0px) !important;
 }
 
 
