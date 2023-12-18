@@ -203,6 +203,18 @@ body {
     margin: 5px 25px;
 }
 
+.message-box div {
+    word-break: break-all;
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    margin: 5px 25px;
+}
+
 .my-mess {
     background: #dcf8c6;
 }
@@ -258,4 +270,22 @@ p.my-mess:hover i {
     display: inline;
     cursor: pointer;
 }
+
+.dropdown {
+    width: 100%;
+}
+
+p.btn.btn-secondary {
+    background-color: #dcf8c6;
+    border: none;
+    color: #000;
+}
+
+ul.dropdown-menu.show {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(339px, 82px, 0px);
+}
+
 
